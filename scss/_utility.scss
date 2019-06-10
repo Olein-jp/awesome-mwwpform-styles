@@ -1,0 +1,213 @@
+/*--------------------------------------------------------------
+    margin & padding
+--------------------------------------------------------------*/
+@for $i from 0 through 20 {
+  .ams-mt-#{$i * 5} {
+    margin-top: #{$i * 5}px;
+  }
+  .ams-mb-#{$i * 5} {
+    margin-bottom: #{$i * 5}px;
+  }
+  .ams-mt-#{$i * 5}_sp {
+    @include mq-down(xs) {
+      margin-top: #{$i * 5}px;
+    }
+  }
+  .ams-mb-#{$i * 5}_sp {
+    @include mq-down(xs) {
+      margin-bottom: #{$i * 5}px;
+    }
+  }
+  .ams-mt-#{$i * 5}_md {
+    @include mq-up(md) {
+      margin-top: #{$i * 5}px;
+    }
+  }
+  .ams-mb-#{$i * 5}_md {
+    @include mq-up(md) {
+      margin-bottom: #{$i * 5}px;
+    }
+  }
+  .ams-mt-#{$i * 5}_lg {
+    @include mq-up(lg) {
+      margin-top: #{$i * 5}px;
+    }
+  }
+  .ams-mb-#{$i * 5}_lg {
+    @include mq-up(lg) {
+      margin-bottom: #{$i * 5}px;
+    }
+  }
+
+  .ams-mr-#{$i * 5} {
+    margin-right: #{$i * 5}px;
+  }
+  .ams-ml-#{$i * 5} {
+    margin-left: #{$i * 5}px;
+  }
+  .ams-mr-#{$i * 5}_sp {
+    @include mq-down(xs) {
+      margin-right: #{$i * 5}px;
+    }
+  }
+  .ams-ml-#{$i * 5}_sp {
+    @include mq-down(xs) {
+      margin-left: #{$i * 5}px;
+    }
+  }
+  .ams-mr-#{$i * 5}_md {
+    @include mq-up(md) {
+      margin-right: #{$i * 5}px;
+    }
+  }
+  .ams-ml-#{$i * 5}_md {
+    @include mq-up(md) {
+      margin-left: #{$i * 5}px;
+    }
+  }
+  .ams-mr-#{$i * 5}_lg {
+    @include mq-up(lg) {
+      margin-right: #{$i * 5}px;
+    }
+  }
+  .ams-ml-#{$i * 5}_lg {
+    @include mq-up(lg) {
+      margin-left: #{$i * 5}px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+    font size
+--------------------------------------------------------------*/
+@for $i from 12 through 40 {
+  .ams-fz-#{$i} {
+    font-size: #{$i / 10}rem;
+  }
+  .ams-fz-#{$i}_sp {
+    @include mq-down(xs) {
+      font-size: #{$i / 10}rem;
+    }
+  }
+  .ams-fz-#{$i}_md {
+    @include mq-up(md) {
+      font-size: #{$i / 10}rem;
+    }
+  }
+  .ams-fz-#{$i}_lg {
+    @include mq-up(lg) {
+      font-size: #{$i / 10}rem;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+    font weight
+--------------------------------------------------------------*/
+.ams-fw-normal {
+  font-weight: normal;
+}
+.ams-fw-bold {
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+    display / undisplay
+--------------------------------------------------------------*/
+.ams-db {
+  display: block;
+}
+.ams-db_sp {
+  @include mq-down(xs) {
+    display: block;
+  }
+}
+.ams-db_md {
+  @include mq-up(md) {
+    display: block;
+  }
+}
+.ams-db_lg {
+  @include mq-up(lg) {
+    display: block;
+  }
+}
+
+.ams-dn {
+  display: none;
+}
+.ams-dn_sp {
+  @include mq-down(xs) {
+    display: none;
+  }
+}
+.ams-dn_md {
+  @include mq-up(md) {
+    display: none;
+  }
+}
+.ams-dn_lg {
+  @include mq-up(lg) {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+    text align
+--------------------------------------------------------------*/
+.ams-tal {
+  text-align: left;
+}
+.ams-tal_sp {
+  @include mq-down(xs) {
+    text-align: left;
+  }
+}
+.ams-tal_md {
+  @include mq-up(md) {
+    text-align: left;
+  }
+}
+.ams-tal_ld {
+  @include mq-up(lg) {
+    text-align: left;
+  }
+}
+
+.ams-tac {
+  text-align: center;
+}
+.ams-tac_sp {
+  @include mq-down(xs) {
+    text-align: center;
+  }
+}
+.ams-tac_md {
+  @include mq-up(md) {
+    text-align: center;
+  }
+}
+.ams-tac_ld {
+  @include mq-up(lg) {
+    text-align: center;
+  }
+}
+
+.ams-tar {
+  text-align: right;
+}
+.ams-tar_sp {
+  @include mq-down(xs) {
+    text-align: right;
+  }
+}
+.ams-tar_md {
+  @include mq-up(md) {
+    text-align: right;
+  }
+}
+.ams-tar_ld {
+  @include mq-up(lg) {
+    text-align: right;
+  }
+}

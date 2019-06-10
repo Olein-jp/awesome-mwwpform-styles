@@ -1,0 +1,149 @@
+@import "mixin";
+
+/*--------------------------------------------------------------
+    Layout
+--------------------------------------------------------------*/
+.ams-form-table {
+  &__th,
+  &__td {
+    display: block;
+    border: none;
+    padding: 0;
+    @include mq-up(lg) {
+      display: table-cell;
+      padding: 10px;
+    }
+  }
+  &__th {
+    text-align: center;
+    font-weight: normal;
+    @include mq-up(lg) {
+      text-align: left;
+    }
+  }
+  &__td {
+    margin-bottom: 15px;
+  }
+}
+
+.ams-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/*--------------------------------------------------------------
+    form control
+--------------------------------------------------------------*/
+.ams-form-control {
+  width: 100%;
+  //font-size: 14px;
+  padding: .5em;
+  border: 1px solid #ccc;
+
+  &[type="file"] {
+    padding: 10px 0;
+    border: none;
+    width: 90%;
+  }
+
+  &[type="range"] {
+    border: none;
+    padding: 15px 0;
+    //background: #f4f4f4;
+    &::-webkit-slider-runnable-track {
+      cursor: pointer;
+      background: #ccc;
+      border-radius: 2px;
+      height: 4px;
+      width: 100%;
+    }
+
+    &::-webkit-slider-thumb {
+      //background: #111;
+      //border: none;
+      //border-radius: 3px;
+      //cursor: pointer;
+      //height: 20px;
+      margin-top: -5px;
+      //width: 20px;
+    }
+  }
+
+  &[type="checkbox"],
+  &[type="radio"] {
+    width: auto;
+  }
+}
+
+select.ams-form-control {
+  background: #fff;
+  border-radius: 0;
+  @include mq-up(lg) {
+    appearance: none;
+  }
+}
+
+.mwform-tel-field {
+  input:nth-of-type(1) {
+    width: 25%;
+  }
+  input:nth-of-type(2),
+  input:nth-of-type(3) {
+    width: 31%;
+  }
+  @include mq-up(lg) {
+    input:nth-of-type(1),
+    input:nth-of-type(2),
+    input:nth-of-type(3) {
+      width: auto;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+    label
+--------------------------------------------------------------*/
+.ams-label {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+    button
+--------------------------------------------------------------*/
+.ams-button-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include mq-up(lg) {
+    flex-direction: row;
+    .ams-button {
+      margin: 15px;
+    }
+  }
+  &_left {
+    justify-content: flex-start;
+    .ams-button {
+      margin: 0 15px 15px 0;
+    }
+  }
+  &_right {
+    justify-content: flex-end;
+    .ams-button {
+      margin: 0 0 15px 15px;
+    }
+  }
+}
+
+.ams-button {
+  margin: 15px 0;
+  &_fullwidth {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+/*--------------------------------------------------------------
+    utility
+--------------------------------------------------------------*/
+@import "utility";
