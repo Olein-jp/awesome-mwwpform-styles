@@ -4,7 +4,7 @@
 .ams-form-table__th, .ams-form-table__td {
   display: block;
   border: none;
-  padding: 0;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 992px) {
@@ -29,6 +29,72 @@
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 992px) {
+  .ams-form-table_5-5 .ams-form-table__th,
+  .ams-form-table_5-5 .ams-form-table__td {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ams-form-table_4-6 .ams-form-table__th {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ams-form-table_4-6 .ams-form-table__td {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ams-form-table_4-6 .ams-form-table__th {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ams-form-table_4-6 .ams-form-table__td {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ams-form-table_3-7 .ams-form-table__th {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ams-form-table_3-7 .ams-form-table__td {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ams-form-table_2-8 .ams-form-table__th {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ams-form-table_2-8 .ams-form-table__td {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ams-form-table_vertical .ams-form-table__th,
+  .ams-form-table_vertical .ams-form-table__td {
+    display: block;
+  }
+}
+
+.ams-form-table_stripe tr:nth-child(2n) {
+  background: #f4f4f4;
+}
+
 .ams-form-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +103,32 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.ams-form-group input,
+.ams-form-group textarea,
+.ams-form-group select {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .ams-form-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .ams-form-group input,
+  .ams-form-group textarea,
+  .ams-form-group select {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .ams-form-group input:last-child,
+  .ams-form-group textarea:last-child,
+  .ams-form-group select:last-child {
+    margin-right: 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -112,6 +204,13 @@ select.ams-form-control {
   width: 100%;
 }
 
+.ams-required {
+  display: inline-block;
+  color: red;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
 /*--------------------------------------------------------------
     button
 --------------------------------------------------------------*/
@@ -162,6 +261,8 @@ select.ams-form-control {
 
 .ams-button {
   margin: 15px 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 .ams-button_fullwidth {
@@ -2028,640 +2129,640 @@ select.ams-form-control {
     font size
 --------------------------------------------------------------*/
 .ams-fz-12 {
-  font-size: 1.2rem;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-12_sp {
-    font-size: 1.2rem;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-12_md {
-    font-size: 1.2rem;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-12_lg {
-    font-size: 1.2rem;
+    font-size: 12px;
   }
 }
 
 .ams-fz-13 {
-  font-size: 1.3rem;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-13_sp {
-    font-size: 1.3rem;
+    font-size: 13px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-13_md {
-    font-size: 1.3rem;
+    font-size: 13px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-13_lg {
-    font-size: 1.3rem;
+    font-size: 13px;
   }
 }
 
 .ams-fz-14 {
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-14_sp {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-14_md {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-14_lg {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
 }
 
 .ams-fz-15 {
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-15_sp {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-15_md {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-15_lg {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
 }
 
 .ams-fz-16 {
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-16_sp {
-    font-size: 1.6rem;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-16_md {
-    font-size: 1.6rem;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-16_lg {
-    font-size: 1.6rem;
+    font-size: 16px;
   }
 }
 
 .ams-fz-17 {
-  font-size: 1.7rem;
+  font-size: 17px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-17_sp {
-    font-size: 1.7rem;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-17_md {
-    font-size: 1.7rem;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-17_lg {
-    font-size: 1.7rem;
+    font-size: 17px;
   }
 }
 
 .ams-fz-18 {
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-18_sp {
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-18_md {
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-18_lg {
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 }
 
 .ams-fz-19 {
-  font-size: 1.9rem;
+  font-size: 19px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-19_sp {
-    font-size: 1.9rem;
+    font-size: 19px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-19_md {
-    font-size: 1.9rem;
+    font-size: 19px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-19_lg {
-    font-size: 1.9rem;
+    font-size: 19px;
   }
 }
 
 .ams-fz-20 {
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-20_sp {
-    font-size: 2rem;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-20_md {
-    font-size: 2rem;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-20_lg {
-    font-size: 2rem;
+    font-size: 20px;
   }
 }
 
 .ams-fz-21 {
-  font-size: 2.1rem;
+  font-size: 21px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-21_sp {
-    font-size: 2.1rem;
+    font-size: 21px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-21_md {
-    font-size: 2.1rem;
+    font-size: 21px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-21_lg {
-    font-size: 2.1rem;
+    font-size: 21px;
   }
 }
 
 .ams-fz-22 {
-  font-size: 2.2rem;
+  font-size: 22px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-22_sp {
-    font-size: 2.2rem;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-22_md {
-    font-size: 2.2rem;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-22_lg {
-    font-size: 2.2rem;
+    font-size: 22px;
   }
 }
 
 .ams-fz-23 {
-  font-size: 2.3rem;
+  font-size: 23px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-23_sp {
-    font-size: 2.3rem;
+    font-size: 23px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-23_md {
-    font-size: 2.3rem;
+    font-size: 23px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-23_lg {
-    font-size: 2.3rem;
+    font-size: 23px;
   }
 }
 
 .ams-fz-24 {
-  font-size: 2.4rem;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-24_sp {
-    font-size: 2.4rem;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-24_md {
-    font-size: 2.4rem;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-24_lg {
-    font-size: 2.4rem;
+    font-size: 24px;
   }
 }
 
 .ams-fz-25 {
-  font-size: 2.5rem;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-25_sp {
-    font-size: 2.5rem;
+    font-size: 25px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-25_md {
-    font-size: 2.5rem;
+    font-size: 25px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-25_lg {
-    font-size: 2.5rem;
+    font-size: 25px;
   }
 }
 
 .ams-fz-26 {
-  font-size: 2.6rem;
+  font-size: 26px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-26_sp {
-    font-size: 2.6rem;
+    font-size: 26px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-26_md {
-    font-size: 2.6rem;
+    font-size: 26px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-26_lg {
-    font-size: 2.6rem;
+    font-size: 26px;
   }
 }
 
 .ams-fz-27 {
-  font-size: 2.7rem;
+  font-size: 27px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-27_sp {
-    font-size: 2.7rem;
+    font-size: 27px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-27_md {
-    font-size: 2.7rem;
+    font-size: 27px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-27_lg {
-    font-size: 2.7rem;
+    font-size: 27px;
   }
 }
 
 .ams-fz-28 {
-  font-size: 2.8rem;
+  font-size: 28px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-28_sp {
-    font-size: 2.8rem;
+    font-size: 28px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-28_md {
-    font-size: 2.8rem;
+    font-size: 28px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-28_lg {
-    font-size: 2.8rem;
+    font-size: 28px;
   }
 }
 
 .ams-fz-29 {
-  font-size: 2.9rem;
+  font-size: 29px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-29_sp {
-    font-size: 2.9rem;
+    font-size: 29px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-29_md {
-    font-size: 2.9rem;
+    font-size: 29px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-29_lg {
-    font-size: 2.9rem;
+    font-size: 29px;
   }
 }
 
 .ams-fz-30 {
-  font-size: 3rem;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-30_sp {
-    font-size: 3rem;
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-30_md {
-    font-size: 3rem;
+    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-30_lg {
-    font-size: 3rem;
+    font-size: 30px;
   }
 }
 
 .ams-fz-31 {
-  font-size: 3.1rem;
+  font-size: 31px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-31_sp {
-    font-size: 3.1rem;
+    font-size: 31px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-31_md {
-    font-size: 3.1rem;
+    font-size: 31px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-31_lg {
-    font-size: 3.1rem;
+    font-size: 31px;
   }
 }
 
 .ams-fz-32 {
-  font-size: 3.2rem;
+  font-size: 32px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-32_sp {
-    font-size: 3.2rem;
+    font-size: 32px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-32_md {
-    font-size: 3.2rem;
+    font-size: 32px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-32_lg {
-    font-size: 3.2rem;
+    font-size: 32px;
   }
 }
 
 .ams-fz-33 {
-  font-size: 3.3rem;
+  font-size: 33px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-33_sp {
-    font-size: 3.3rem;
+    font-size: 33px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-33_md {
-    font-size: 3.3rem;
+    font-size: 33px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-33_lg {
-    font-size: 3.3rem;
+    font-size: 33px;
   }
 }
 
 .ams-fz-34 {
-  font-size: 3.4rem;
+  font-size: 34px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-34_sp {
-    font-size: 3.4rem;
+    font-size: 34px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-34_md {
-    font-size: 3.4rem;
+    font-size: 34px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-34_lg {
-    font-size: 3.4rem;
+    font-size: 34px;
   }
 }
 
 .ams-fz-35 {
-  font-size: 3.5rem;
+  font-size: 35px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-35_sp {
-    font-size: 3.5rem;
+    font-size: 35px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-35_md {
-    font-size: 3.5rem;
+    font-size: 35px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-35_lg {
-    font-size: 3.5rem;
+    font-size: 35px;
   }
 }
 
 .ams-fz-36 {
-  font-size: 3.6rem;
+  font-size: 36px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-36_sp {
-    font-size: 3.6rem;
+    font-size: 36px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-36_md {
-    font-size: 3.6rem;
+    font-size: 36px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-36_lg {
-    font-size: 3.6rem;
+    font-size: 36px;
   }
 }
 
 .ams-fz-37 {
-  font-size: 3.7rem;
+  font-size: 37px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-37_sp {
-    font-size: 3.7rem;
+    font-size: 37px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-37_md {
-    font-size: 3.7rem;
+    font-size: 37px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-37_lg {
-    font-size: 3.7rem;
+    font-size: 37px;
   }
 }
 
 .ams-fz-38 {
-  font-size: 3.8rem;
+  font-size: 38px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-38_sp {
-    font-size: 3.8rem;
+    font-size: 38px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-38_md {
-    font-size: 3.8rem;
+    font-size: 38px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-38_lg {
-    font-size: 3.8rem;
+    font-size: 38px;
   }
 }
 
 .ams-fz-39 {
-  font-size: 3.9rem;
+  font-size: 39px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-39_sp {
-    font-size: 3.9rem;
+    font-size: 39px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-39_md {
-    font-size: 3.9rem;
+    font-size: 39px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-39_lg {
-    font-size: 3.9rem;
+    font-size: 39px;
   }
 }
 
 .ams-fz-40 {
-  font-size: 4rem;
+  font-size: 40px;
 }
 
 @media screen and (max-width: 479px) {
   .ams-fz-40_sp {
-    font-size: 4rem;
+    font-size: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .ams-fz-40_md {
-    font-size: 4rem;
+    font-size: 40px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .ams-fz-40_lg {
-    font-size: 4rem;
+    font-size: 40px;
   }
 }
 

@@ -8,7 +8,7 @@
   &__td {
     display: block;
     border: none;
-    padding: 0;
+    padding: 0 15px;
     @include mq-up(lg) {
       display: table-cell;
       padding: 10px;
@@ -24,11 +24,97 @@
   &__td {
     margin-bottom: 15px;
   }
+  &_5-5 {
+    .ams-form-table__th,
+    .ams-form-table__td {
+      @include mq-up(lg) {
+        width: 50%;
+      }
+    }
+  }
+  &_4-6 {
+    .ams-form-table__th {
+      @include mq-up(lg) {
+        width: 40%;
+      }
+    }
+    .ams-form-table__td {
+      @include mq-up(lg) {
+        width: 60%;
+      }
+    }
+  }
+  &_4-6 {
+    .ams-form-table__th {
+      @include mq-up(lg) {
+        width: 40%;
+      }
+    }
+    .ams-form-table__td {
+      @include mq-up(lg) {
+        width: 60%;
+      }
+    }
+  }
+  &_3-7 {
+    .ams-form-table__th {
+      @include mq-up(lg) {
+        width: 30%;
+      }
+    }
+    .ams-form-table__td {
+      @include mq-up(lg) {
+        width: 70%;
+      }
+    }
+  }
+  &_2-8 {
+    .ams-form-table__th {
+      @include mq-up(lg) {
+        width: 20%;
+      }
+    }
+    .ams-form-table__td {
+      @include mq-up(lg) {
+        width: 80%;
+      }
+    }
+  }
+  &_vertical {
+    .ams-form-table__th,
+    .ams-form-table__td {
+      @include mq-up(lg) {
+        display: block;
+      }
+    }
+  }
+  &_stripe {
+    tr:nth-child(2n) {
+      background: #f4f4f4;
+    }
+  }
 }
 
 .ams-form-group {
   display: flex;
   flex-direction: column;
+  input,
+  textarea,
+  select {
+    margin-bottom: 10px;
+  }
+  @include mq-up(md) {
+    flex-direction: row;
+    input,
+    textarea,
+    select {
+      margin-bottom: 0;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 /*--------------------------------------------------------------
@@ -107,6 +193,13 @@ select.ams-form-control {
   width: 100%;
 }
 
+.ams-required {
+  display: inline-block;
+  color: red;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
 /*--------------------------------------------------------------
     button
 --------------------------------------------------------------*/
@@ -136,6 +229,8 @@ select.ams-form-control {
 
 .ams-button {
   margin: 15px 0;
+  background-color: #f4f4f4;
+  color: #333;
   &_fullwidth {
     display: block;
     width: 100%;

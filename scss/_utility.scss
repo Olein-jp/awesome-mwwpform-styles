@@ -82,21 +82,21 @@
 --------------------------------------------------------------*/
 @for $i from 12 through 40 {
   .ams-fz-#{$i} {
-    font-size: #{$i / 10}rem;
+    font-size: #{$i}px;
   }
   .ams-fz-#{$i}_sp {
     @include mq-down(xs) {
-      font-size: #{$i / 10}rem;
+      font-size: #{$i}px;
     }
   }
   .ams-fz-#{$i}_md {
     @include mq-up(md) {
-      font-size: #{$i / 10}rem;
+      font-size: #{$i}px;
     }
   }
   .ams-fz-#{$i}_lg {
     @include mq-up(lg) {
-      font-size: #{$i / 10}rem;
+      font-size: #{$i}px;
     }
   }
 }

@@ -1,12 +1,12 @@
 === Awesome MW WP Form Styles ===
-Contributors: Koji Kuno
+Contributors: olein
 Tags: css, style.css
 Requires at least: 5.2.1
-Tested up to: 5.2.1
-Stable tag: 1.0.0
+Tested up to: 5.2.2
+Stable tag: 4.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Requires PHP: 7.2.9
+Requires PHP: 5.6
 
 == Description ==
 
@@ -28,6 +28,15 @@ OR…
 5. Click “Install”.. and then “Activate plugin”.
 
 == Changelog ==
+
+= 1.0.3 =
+Added css classes.
+
+= 1.0.2 =
+Changed Contributor's name on readme.txt.
+
+= 1.0.1 =
+Fixed css.
 
 = 1.0.0 =
 Released.
