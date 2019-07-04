@@ -3,7 +3,7 @@
 Plugin Name: Awesome MW WP Form Styles
 Plugin URI: https://github.com/Olein-jp/awesome-mwwpform-styles
 Description: This plugin will choice css classes for making style in input form with MW WP Form.
-Version: 1.0.3
+Version: 1.0.4
 Author: olein
 Author URI: https://olein-design.com
 License: GPLv2 or later

@@ -29,6 +29,9 @@ OR…
 
 == Changelog ==
 
+= 1.0.4 =
+Added css classes.
+
 = 1.0.3 =
 Added css classes.
 

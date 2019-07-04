@@ -1,6 +1,13 @@
 @import "mixin";
 
 /*--------------------------------------------------------------
+    initial set
+--------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
     Layout
 --------------------------------------------------------------*/
 .ams-form-table {
@@ -17,6 +24,8 @@
   &__th {
     text-align: center;
     font-weight: normal;
+    padding-top: 15px;
+    padding-bottom: 15px;
     @include mq-up(lg) {
       text-align: left;
     }
@@ -98,16 +107,14 @@
 .ams-form-group {
   display: flex;
   flex-direction: column;
+  @include mq-up(md) {
+    flex-direction: row;
+  }
   input,
   textarea,
   select {
     margin-bottom: 10px;
-  }
-  @include mq-up(md) {
-    flex-direction: row;
-    input,
-    textarea,
-    select {
+    @include mq-up(md) {
       margin-bottom: 0;
       margin-right: 10px;
       &:last-child {
@@ -125,7 +132,9 @@
   //font-size: 14px;
   padding: .5em;
   border: 1px solid #ccc;
-
+  border-radius: 0;
+  //appearance: none;
+  font-size: 16px;
   &[type="file"] {
     padding: 10px 0;
     border: none;
@@ -214,27 +223,43 @@ select.ams-form-control {
     }
   }
   &_left {
-    justify-content: flex-start;
+    @include mq-up(lg) {
+      justify-content: flex-start;
+    }
     .ams-button {
-      margin: 0 15px 15px 0;
+      @include mq-up(lg) {
+        margin: 0 15px 15px 0;
+      }
     }
   }
   &_right {
-    justify-content: flex-end;
+    @include mq-up(lg) {
+      justify-content: flex-end;
+    }
     .ams-button {
-      margin: 0 0 15px 15px;
+      @include mq-up(lg) {
+        margin: 0 0 15px 15px;
+      }
     }
   }
 }
 
 .ams-button {
   margin: 15px 0;
-  background-color: #f4f4f4;
-  color: #333;
+  padding: 18px 20px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 0;
   &_fullwidth {
     display: block;
     width: 100%;
     margin: 15px 0;
+  }
+  &_rounded {
+    border-radius: 7px;
   }
 }
 

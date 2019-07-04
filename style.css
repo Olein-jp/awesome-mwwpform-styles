@@ -1,4 +1,12 @@
 /*--------------------------------------------------------------
+    initial set
+--------------------------------------------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
     Layout
 --------------------------------------------------------------*/
 .ams-form-table__th, .ams-form-table__td {
@@ -17,6 +25,8 @@
 .ams-form-table__th {
   text-align: center;
   font-weight: normal;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 992px) {
@@ -105,12 +115,6 @@
   flex-direction: column;
 }
 
-.ams-form-group input,
-.ams-form-group textarea,
-.ams-form-group select {
-  margin-bottom: 10px;
-}
-
 @media screen and (min-width: 768px) {
   .ams-form-group {
     -webkit-box-orient: horizontal;
@@ -118,6 +122,15 @@
     -ms-flex-direction: row;
     flex-direction: row;
   }
+}
+
+.ams-form-group input,
+.ams-form-group textarea,
+.ams-form-group select {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
   .ams-form-group input,
   .ams-form-group textarea,
   .ams-form-group select {
@@ -138,6 +151,8 @@
   width: 100%;
   padding: .5em;
   border: 1px solid #ccc;
+  border-radius: 0;
+  font-size: 16px;
 }
 
 .ams-form-control[type="file"] {
@@ -239,36 +254,53 @@ select.ams-form-control {
   }
 }
 
-.ams-button-area_left {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+@media screen and (min-width: 992px) {
+  .ams-button-area_left {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
 }
 
-.ams-button-area_left .ams-button {
-  margin: 0 15px 15px 0;
+@media screen and (min-width: 992px) {
+  .ams-button-area_left .ams-button {
+    margin: 0 15px 15px 0;
+  }
 }
 
-.ams-button-area_right {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+@media screen and (min-width: 992px) {
+  .ams-button-area_right {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
 }
 
-.ams-button-area_right .ams-button {
-  margin: 0 0 15px 15px;
+@media screen and (min-width: 992px) {
+  .ams-button-area_right .ams-button {
+    margin: 0 0 15px 15px;
+  }
 }
 
 .ams-button {
   margin: 15px 0;
-  background-color: #f4f4f4;
-  color: #333;
+  padding: 18px 20px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 0;
 }
 
 .ams-button_fullwidth {
   display: block;
   width: 100%;
   margin: 15px 0;
+}
+
+.ams-button_rounded {
+  border-radius: 7px;
 }
 
 /*--------------------------------------------------------------
