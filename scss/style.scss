@@ -136,6 +136,9 @@
       font-weight: bold;
       padding: 15px;
       line-height: 1.2;
+      @include mq-up(md) {
+        text-align: left;
+      }
     }
   }
 }

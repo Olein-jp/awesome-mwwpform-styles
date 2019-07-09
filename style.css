@@ -157,6 +157,12 @@
   line-height: 1.2;
 }
 
+@media screen and (min-width: 768px) {
+  .mw_wp_form_confirm .ams-form-table__td {
+    text-align: left;
+  }
+}
+
 /*--------------------------------------------------------------
     form control
 --------------------------------------------------------------*/
