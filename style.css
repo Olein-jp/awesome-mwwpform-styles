@@ -144,6 +144,19 @@
   }
 }
 
+/* confirm view
+------------------------------*/
+.mw_wp_form_confirm .ams-form-table__th {
+  background: #f4f4f4;
+}
+
+.mw_wp_form_confirm .ams-form-table__td {
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+  line-height: 1.2;
+}
+
 /*--------------------------------------------------------------
     form control
 --------------------------------------------------------------*/

@@ -29,6 +29,9 @@ OR…
 
 == Changelog ==
 
+= 1.0.5 =
+Added css class for confirm view.
+
 = 1.0.4 =
 Added css classes.
 
